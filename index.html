@@ -1,2 +1,36 @@
 <!DOCTYPE html>
-<html><body><h2>Placeholder</h2><p>V2 source generation requires more code than fits in one response.</p></body></html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textile GSM Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Textile GSM Calculator</h2>
+
+<label>Fin EPI</label>
+<input type="number" id="epi">
+
+<label>Fin PPI</label>
+<input type="number" id="ppi">
+
+<label>Warp Count</label>
+<input type="number" id="warp">
+
+<label>Weft Count</label>
+<input type="number" id="weft">
+
+<button onclick="calculate()">Calculate</button>
+
+<h3>Results</h3>
+
+<p>Warp Weight: <span id="warpWt">0</span></p>
+<p>Weft Weight: <span id="weftWt">0</span></p>
+<p>GSM: <span id="gsm">0</span></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
