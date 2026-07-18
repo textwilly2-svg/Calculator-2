@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Textile GSM Calculator</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div class="container">
 
 <h2>Textile GSM Calculator</h2>
 
-<label>Fin EPI</label>
-<input type="number" id="epi">
+<label for="epi">Fin EPI</label>
+<input type="number" id="epi" placeholder="Enter Fin EPI">
 
-<label>Fin PPI</label>
-<input type="number" id="ppi">
+<label for="ppi">Fin PPI</label>
+<input type="number" id="ppi" placeholder="Enter Fin PPI">
 
-<label>Warp Count</label>
-<input type="number" id="warp">
+<label for="warp">Warp Count</label>
+<input type="number" id="warp" placeholder="Enter Warp Count">
 
-<label>Weft Count</label>
-<input type="number" id="weft">
+<label for="weft">Weft Count</label>
+<input type="number" id="weft" placeholder="Enter Weft Count">
 
 <button onclick="calculate()">Calculate</button>
 
+<div class="result">
+
 <h3>Results</h3>
 
-<p>Warp Weight: <span id="warpWt">0</span></p>
-<p>Weft Weight: <span id="weftWt">0</span></p>
-<p>GSM: <span id="gsm">0</span></p>
+<p>Warp Weight : <span id="warpWt">0.00</span></p>
+
+<p>Weft Weight : <span id="weftWt">0.00</span></p>
+
+<p>GSM : <span id="gsm">0.00</span></p>
+
+</div>
+
+</div>
 
 <script src="script.js"></script>
 
